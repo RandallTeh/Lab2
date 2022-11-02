@@ -7,14 +7,17 @@ def display_main_menu():
 
 
 def get_user_input(x):
+    print(x)
     user_input = x.split(",")
     floats = [float(item) for item in user_input]  # list comprehension
+    print(floats)
     return floats
 
 
 def calc_average(floats):
     average = sum(floats) / len(floats)
     average = round(average, 2)
+    return average;
     print(average)
 
 
